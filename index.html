@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Travel Plan</title>
+<title>Travel Itinerary</title>
 <style>
-body{
-font-family:Arial,sans-serif;
-padding:40px;
-background:white;
-}
-.container{
-max-width:900px;
-margin:auto;
-border:1px solid #ddd;
-padding:30px;
-}
-h1{
-text-align:center;
-}
-.info{
-margin-bottom:20px;
-}
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-th,td{
-border:1px solid #ccc;
-padding:12px;
-text-align:left;
-}
-th{
-font-weight:bold;
-}
+body{font-family:Arial,sans-serif;background:#f6f7f9;padding:35px;color:#222}
+.container{max-width:900px;margin:auto;background:white;border:1px solid #ddd;padding:35px}
+h1{text-align:center;margin-bottom:25px}
+.top{border-bottom:2px solid #ddd;padding-bottom:15px;margin-bottom:25px}
+.segment{border:1px solid #d8d8d8;margin-bottom:22px;padding:20px;border-radius:6px}
+.segment h2{margin:0 0 12px 0;font-size:20px}
+.route{font-size:24px;font-weight:bold;margin:12px 0}
+.time{font-size:18px;font-weight:bold}
+.small{color:#555;font-size:14px}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+td,th{border:1px solid #ddd;padding:10px;text-align:left}
+th{background:#f1f1f1}
 </style>
 </head>
 <body>
-
 <div class="container">
 
-<h1>PROPOSED TRAVEL PLAN</h1>
+<h1>TRAVEL ITINERARY</h1>
 
-<div class="info">
-<p><strong>Passenger Name:</strong> TUSEEF KOUSER</p>
-<p><strong>International Route:</strong> Lahore – Toronto – Lahore</p>
-<p><strong>Domestic Route:</strong> Toronto – Vancouver – Toronto</p>
-<p><strong>Travel Period:</strong> 20 June 2026 – 05 July 2026</p>
+<div class="top">
+<p><b>Passenger Name:</b> TUSEEF KOUSER</p>
+<p><b>Route:</b> Lahore – Toronto – Vancouver – Toronto – Lahore</p>
+<p><b>Travel Period:</b> 20 June 2026 – 06 July 2026</p>
 </div>
 
+<div class="segment">
+<h2>Sat, 20 Jun 2026 – Lahore to Toronto</h2>
+<p class="route">LHE → AUH → YYZ</p>
+<p><b>Airline:</b> Etihad Airways</p>
+<p><b>Total Duration:</b> 22h 10m | <b>Stop:</b> Abu Dhabi (AUH)</p>
 <table>
-<tr>
-<th>Date</th>
-<th>Sector</th>
-</tr>
-
-<tr>
-<td>20 June 2026</td>
-<td>Lahore → Toronto (YYZ)</td>
-</tr>
-
-<tr>
-<td>26 June 2026</td>
-<td>Toronto (YYZ) → Vancouver</td>
-</tr>
-
-<tr>
-<td>30 June 2026</td>
-<td>Vancouver → Toronto (YYZ)</td>
-</tr>
-
-<tr>
-<td>05 July 2026</td>
-<td>Toronto (YYZ) → Lahore</td>
-</tr>
-
+<tr><th>Flight</th><th>Departure</th><th>Arrival</th><th>Duration</th></tr>
+<tr><td>EY289 operated by GETJET</td><td>19:45 LHE, 20 Jun</td><td>22:05 AUH, 20 Jun</td><td>3h 20m</td></tr>
+<tr><td>EY21</td><td>02:30 AUH, 21 Jun</td><td>08:55 YYZ, 21 Jun</td><td>14h 25m</td></tr>
 </table>
-
 </div>
 
+<div class="segment">
+<h2>Fri, 26 Jun 2026 – Toronto to Abbotsford/Vancouver Area</h2>
+<p class="route">YYZ → YXX</p>
+<p><b>Airline:</b> Flair Airlines</p>
+<p><b>Flight:</b> F8665 | <b>Duration:</b> 5h | <b>Direct</b></p>
+<table>
+<tr><th>Departure</th><th>Arrival</th></tr>
+<tr><td>21:00 YYZ Toronto Pearson International</td><td>23:00 YXX Abbotsford</td></tr>
+</table>
+</div>
+
+<div class="segment">
+<h2>Tue, 30 Jun 2026 – Vancouver to Toronto</h2>
+<p class="route">YVR → YYZ</p>
+<p><b>Airline:</b> Flair Airlines</p>
+<p><b>Flight:</b> F8600 | <b>Duration:</b> 4h 40m | <b>Direct</b></p>
+<table>
+<tr><th>Departure</th><th>Arrival</th></tr>
+<tr><td>22:45 YVR Vancouver International, 30 Jun</td><td>06:25 YYZ Toronto Pearson International, 01 Jul</td></tr>
+</table>
+</div>
+
+<div class="segment">
+<h2>Sun, 05 Jul 2026 – Toronto to Lahore</h2>
+<p class="route">YYZ → AUH → LHE</p>
+<p><b>Airline:</b> Etihad Airways</p>
+<p><b>Total Duration:</b> 19h 45m | <b>Stop:</b> Abu Dhabi (AUH)</p>
+<table>
+<tr><th>Flight</th><th>Departure</th><th>Arrival</th><th>Duration</th></tr>
+<tr><td>EY22</td><td>13:40 YYZ, 05 Jul</td><td>11:00 AUH, 06 Jul</td><td>13h 20m</td></tr>
+<tr><td>EY288 operated by GETJET</td><td>14:10 AUH, 06 Jul</td><td>18:25 LHE, 06 Jul</td><td>3h 15m</td></tr>
+</table>
+</div>
+
+</div>
 </body>
 </html>
